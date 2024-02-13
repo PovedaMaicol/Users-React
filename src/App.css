@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.164);
+  color: black;
+}
+
+
+
+.button_app {
+  background-color: rgba(84, 5, 60, 0.338);
+  width: 100%;
+  border: 1px dashed black;
+  height: 2.5em;
+
+  margin-bottom: 1em;
+
+}
+
+.button_app:hover {
+  background-color: green;
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Agrega aquí tus estilos para tablets */
+
+  .container_app {
+    padding: 4em;
+  }
+  .cards_container_app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+ 
+  }
+
+  .container_title {
+    text-align: center;
+  }
+}
