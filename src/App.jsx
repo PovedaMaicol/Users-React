@@ -4,6 +4,7 @@ import useCrud from './assets/hooks/useCrud';
 import FormUser from './components/FormUser';
 import CardUser from './components/CardUser';
 import DeleteUser from './components/DeleteUser';
+import { URL_API } from '../url';
 
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
   const [editUser, setEditUser] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const [isDelete, setIsDelete] = useState();
-  const url = 'https://users-crud.academlo.tech/'
+  // const url = 'https://users-crud.academlo.tech/'
+
+ 
+  const url =  URL_API.url
   const [users, getUsers, createUser, deleteUser, updateUser] = useCrud(url);
 
   useEffect(() => {

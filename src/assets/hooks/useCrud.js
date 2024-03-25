@@ -36,7 +36,7 @@ const useCrud = (urlBase) => {
 
     // Update 
     const updateApi = (path, id, data) => {
-        axios.patch(`${urlBase}${path}/${id}/`, data)
+        axios.put(`${urlBase}${path}/${id}/`, data)
         .then(res => {
             setApiData(apiData.map(element => element.id === id ? res.data : element));
             console.log(res.data);
